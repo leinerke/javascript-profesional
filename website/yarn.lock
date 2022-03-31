@@ -951,6 +951,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@leinerke/mediaplayer@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@leinerke/mediaplayer/-/mediaplayer-1.0.0.tgz#a5ff2e6984d041dfd86a5628bbaaaeeda07089a2"
+  integrity sha512-vmOGeDrFkYwAJsbDdP5mIHm/WHJCNT6keR3tMYfPnX1y/aqPp8jM5zZxhJFxFLeoq8apOXv7ci+8AXm7yMqCqw==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

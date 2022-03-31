@@ -1,7 +1,7 @@
-import { MediaPlayer } from './mediaPlayer';
-import { AutoPlay } from './plugins/AutoPlay';
-import { AutoPause } from './plugins/AutoPause';
-import { AdsPlugin } from './plugins/Ads';
+import { MediaPlayer } from '@leinerke/mediaplayer';
+import { AutoPlay } from '@leinerke/mediaplayer/lib/plugins/AutoPlay';
+import { AutoPause } from '@leinerke/mediaplayer/lib/plugins/AutoPause';
+import { AdsPlugin } from '@leinerke/mediaplayer/lib/plugins/Ads';
 
 const video = document.querySelector('video');
 const $buttonTogglePlay: HTMLElement = document.getElementById('toggle-play');

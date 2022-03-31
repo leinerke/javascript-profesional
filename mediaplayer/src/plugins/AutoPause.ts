@@ -2,7 +2,7 @@ import type { MediaPlayer } from '../MediaPlayer';
 
 class AutoPause {
 	private readonly threshold: number;
-	player: MediaPlayer;
+	player: MediaPlayer | undefined;
 
 	constructor() {
 		this.threshold = 0.25;
@@ -24,18 +24,18 @@ class AutoPause {
 	private handleIntersection(entries: IntersectionObserverEntry[]): void {
 		const entry = entries[0];
 		if (entry.intersectionRatio >= this.threshold) {
-			this.player.play();
+			this.player?.play();
 		} else {
-			this.player.pause();
+			this.player?.pause();
 		}
 	}
 
 	private handleVisibilityChange(): void {
 		const isVisible = document.visibilityState === 'visible';
 		if (isVisible) {
-			this.player.play();
+			this.player?.play();
 		} else {
-			this.player.pause();
+			this.player?.pause();
 		}
 	}
 }

@@ -1,0 +1,47 @@
+Arguments: 
+  /usr/local/Cellar/node@14/14.19.1/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js add -D typescrpit
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/dev/.composer/vendor/bin:/Users/dev/Sites/platzi/js/javascript-profesional/node_modules/.bin:/Users/dev/Library/Android/sdk/emulator:/Users/dev/Library/Android/sdk/tools:/Users/dev/Library/Android/sdk/tools/bin:/Users/dev/Library/Android/sdk/platform-tools:/Users/dev/drush:/usr/local/php5/bin:/usr/local/lib/node_modules/npm
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.19.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescrpit: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:140883:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141855:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1334:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "mediaplayer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Leinerke Suarez <leinerke2000@gmail.com>",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

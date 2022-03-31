@@ -75,7 +75,7 @@ const ALL_ADS: Ad[] = [
 
 class Ads {
 	private static _instance: Ads;
-	private _ads: Ad[];
+	private _ads: Ad[] | undefined;
 
 	private constructor() {
 		this.initAds();
@@ -91,9 +91,9 @@ class Ads {
 		this._ads = [...ALL_ADS];
 	}
 
-	getAd(): Ad {
-		if (this._ads.length === 0) this.initAds();
-		return this._ads.pop();
+	getAd() {
+		if (this._ads?.length === 0) this.initAds();
+		return this._ads?.pop();
 	}
 }
 
