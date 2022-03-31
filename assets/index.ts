@@ -1,6 +1,7 @@
 import { MediaPlayer } from './mediaPlayer';
 import { AutoPlay } from './plugins/AutoPlay';
 import { AutoPause } from './plugins/AutoPause';
+import { AdsPlugin } from './plugins/Ads';
 
 const video = document.querySelector('video');
 const $buttonTogglePlay: HTMLElement = document.getElementById('toggle-play');
@@ -11,6 +12,7 @@ const player = new MediaPlayer({
 	plugins: [
 		new AutoPlay(),
 		new AutoPause(),
+		new AdsPlugin()
 	],
 });
 
